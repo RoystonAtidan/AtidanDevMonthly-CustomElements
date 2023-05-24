@@ -1,0 +1,52 @@
+div.demoform {
+width: 900px;
+margin: 0 auto;
+border: 1px solid #ccc;
+margin-top: 20px;
+position: relative;
+display: block;
+min-height: 600px;
+}
+
+#formcontent{
+padding: 0 25px 25px 25px;
+
+}
+
+atidan-input {
+position: relative;
+display: inline-block;vertical-align: top;
+}
+h1.formtitle {
+font-family: calibri;
+font-weight: 100;
+font-size: 2.5rem;
+letter-spacing: 1px;
+background: #ffca90;
+padding: 20px 25px;
+color: #723e04;
+text-transform: capitalize;
+}
+h3{
+font-family: calibri;
+font-weight: 100;
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
+margin-top:30px;
+color: rgba(180, 83, 9);
+font-size: 1.5rem;
+text-transform: capitalize;
+}
+
+button.custbtn {
+padding: 10px 40px;
+margin: 10px 5px;
+background: none;
+border: 1px solid #ccc;
+font-size: 1rem;
+letter-spacing: 1px;
+background: #ff912b;
+color: #fff;
+/* border-radius: 5px; */
+}
+

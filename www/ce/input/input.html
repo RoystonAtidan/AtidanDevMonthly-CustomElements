@@ -1,0 +1,55 @@
+<template for="input" theme="default">
+    <div class="inputboxwrapper">
+        <div class="inputbox">
+         <div class="labelwrap">
+          <label class="p-x inputlabel">
+          </label>
+         </div>
+         <div class="inputwrapper">
+          <input type="text" class="input" placeholder=""> <label for="input" class="checklabel"></label>
+         </div>
+        </div>
+       </div>
+    <style>
+        .inputbox {display: flex;flex-direction: column;width:100%;padding:  0.5rem;}
+        .inputlabel, .checklabel {font-size: 0.875rem;font-family: calibri;letter-spacing: 1px;
+        line-height: 1.25rem;--tw-text-opacity: 1;
+        color: rgba(31, 41, 55, var(--tw-text-opacity));--tw-text-opacity: 1;
+        color: rgba(180, 83, 9, var(--tw-text-opacity));}
+        .input,.inpselect {flex-grow: 1;outline:none;height:100%;border-bottom-width: 2px;padding:.5rem 0.25rem;margin-top: 0.25rem;--tw-border-opacity: 1;
+        border-color: rgba(251, 191, 36, var(--tw-border-opacity)); border-style: solid;
+        font-family: calibri;
+    border-width: 1px;}
+        label.inputlabel {text-transform: capitalize;}
+    </style>
+</template>
+
+<template for="input" theme="horizontal">
+    <div class="inputboxwrapper">
+        <div class="inputbox">
+         <div class="labelwrap">
+          <label class="p-x inputlabel">
+          </label>
+         </div>
+         <div class="inputwrapper">
+          <input type="text" class="input" placeholder=""> <label for="input" class="checklabel"></label>
+         </div>
+        </div>
+       </div>
+    <style>
+        .inputbox {display: flex;flex-direction: row;width:100%;
+    padding: 0 0.5rem;
+height : 40px;}
+        .labelwrap {
+            width: 100px;
+            margin: auto 0;
+        }
+        .inputlabel, .checklabel {font-size: 0.875rem;font-family: calibri;letter-spacing: 1px;
+        line-height: 1.25rem;--tw-text-opacity: 1;
+        color: rgba(31, 41, 55, var(--tw-text-opacity));--tw-text-opacity: 1;
+        color: rgba(180, 83, 9, var(--tw-text-opacity));}
+        .input,.inpselect {    flex-grow: 1;    outline: none;    /* height: 50%; */    border-bottom-width: 2px;    padding: 0.5rem 0.25rem;
+    margin-top: 0;    --tw-border-opacity: 1;    border-color: rgba(251, 191, 36, var(--tw-border-opacity));    border-style: solid;
+    font-family: calibri;    border-width: 1px;    margin-left: 20px;}
+    </style>
+</template>

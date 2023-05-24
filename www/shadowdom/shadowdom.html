@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>HTML without a Shadow DOM</title>
+</head>
+<body>
+    <div class="containerhead">
+        <div class="container">
+        <h1 class="title" >Shadow DOM (wthout)</h1>
+        </div>
+    </div>
+    <!-- 2. We will verfy the effect of shadow DOM both open and closed -->
+    <div class="container">        
+        <div id="shadowopen">
+        </div>
+        <hr>
+        <div id="shadowclosed">
+        </div>
+        <hr>
+        <div id="extdiv">
+        </div>
+        <hr>
+        <h2 id="result" ></h2>
+    </div>
+    
+    <div class="container">
+        <!-- 1. Demo box contains a header,bootstrap input field, button -->
+        <div class="demobox">
+            <h1>External</h1>
+            <div class="form-group" >
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control mytextinp" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>  
+            <button type="button" class="btn btn-primary" onclick="showResult(this)">Show Result</button>    
+            </div>
+        </div>
+        <!-- Also contains style -->
+        <style>
+            h1 {
+                color: green !important;
+            }
+        </style>
+        <!-- Also contains script -->
+        <script>
+            function showResult(ele){
+                document.querySelector('#result').innerText= "from " + ele.closest(".demobox").querySelector("h1").innerText;
+                setTimeout(function(){
+                    document.querySelector('#result').innerText = "";
+                },3000)
+            }
+            alert("Test");
+        </script>
+    </div>
+
+    <style>
+        h1.title {
+            color: #6d6d6d;
+            font-family: calibri;
+            font-size: 3rem;
+        }
+    
+        .containerhead{
+            padding: 25px 0;
+            background: #e5e5e5;
+        }
+    </style>
+</body>
+</html>

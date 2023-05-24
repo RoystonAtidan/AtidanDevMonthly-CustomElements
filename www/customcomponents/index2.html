@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="demoform" class="container demoform">
+        <h1 class="formtitle">Registration Form</h1>
+        <div id="formcontent">
+            <h3>Basic Details</h3>
+            <atidan-input type="text" label="First Name" template="default" ></atidan-input>
+            <atidan-input type="text" label="Second Name" template="default" ></atidan-input>
+            <atidan-input type="text" label="Third Name" template="default" ></atidan-input>
+            <atidan-input type="text" label="Fourth Name" template="default" ></atidan-input>
+            <atidan-input type="text" label="Last Name" template="default" ></atidan-input>
+            <h3>Other Details</h3>
+            
+            <atidan-input type="date" label="DOB" template="default" ></atidan-input>
+            <atidan-input type="select" label="Gender">
+                <pre>
+                    M=>Male
+                    F=>Female
+                </pre>
+            </atidan-input>
+            
+            <h3>Credentials</h3>
+            <atidan-input type="text" label="Prefered User Name" template="default" ></atidan-input>
+            <atidan-input type="password" label="Password" template="default" ></atidan-input>
+            <atidan-input type="password" label="Confirm Password" template="default" ></atidan-input>
+            <div template="default" ></div>
+            <atidan-input type="checkbox" label="I agree to the terms and conditions" template="default" ></atidan-input>
+            <div></div>
+            <button type="submit" class="custbtn" >Register</button>
+
+        </div>
+    </div>
+
+
+    <div id="demoform" class="container">
+        <h1 class="formtitle">Registration Form</h1>
+        <div id="formcontent">
+            <h3>Basic Details</h3>
+            <atidan-input type="text" label="First Name" template="horizontal" ></atidan-input>
+            <atidan-input type="text" label="Second Name" template="horizontal" ></atidan-input>
+            <atidan-input type="text" label="Third Name" template="horizontal" ></atidan-input>
+            <atidan-input type="text" label="Fourth Name" template="horizontal" ></atidan-input>
+            <atidan-input type="text" label="Last Name" template="horizontal" ></atidan-input>
+            <h3>Other Details</h3>
+            
+            <atidan-input type="date" label="DOB" template="horizontal" ></atidan-input>
+            <atidan-input type="select" label="Gender"  template="horizontal">
+                <pre>
+                    M=>Male
+                    F=>Female
+                </pre>
+            </atidan-input>
+            
+            <h3>Credentials</h3>
+            <atidan-input type="text" label="Prefered User Name" template="horizontal" ></atidan-input>
+            <atidan-input type="password" label="Password" template="horizontal" ></atidan-input>
+            <atidan-input type="password" label="Confirm Password" template="horizontal" ></atidan-input>
+            <div template="horizontal" ></div>
+            <atidan-input type="checkbox" label="I agree to the terms and conditions" template="horizontal" ></atidan-input>
+            <div></div>
+            <button type="submit" class="custbtn" >Register</button>
+
+        </div>
+    </div>
+
+    <atidan-prompt></atidan-prompt>
+    
+    <script>
+        window.basepath = "../";
+    </script>
+    <script src="../ce/ce.js"></script>
+
+ 
+</body>
+</html>

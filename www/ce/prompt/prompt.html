@@ -1,0 +1,25 @@
+<template for="prompt" theme="default">
+    <div class="promptwrapper">
+        <div class="promptbox">
+         <input type="text" class="promptinput" placeholder="Create form ..." value="">
+         <button class="promptbutton">
+          Exec
+         </button>
+         <button class="promptbutton2">
+          🎙
+         </button>
+        </div>
+       </div>
+
+    <style>
+atidan-prompt  .promptwrapper {border-radius: 0.25rem;position: fixed;bottom: 0px;left: 0px;right: 0px;display: flex;justify-content: center;}
+atidan-prompt .promptbox {display: flex;flex-direction: row;width:60%;border-width: 4px;border-radius: 0.5rem;}
+atidan-prompt .promptinput {flex-grow: 1;padding-left: 0.5rem;
+padding-right: 0.5rem;outline: 2px solid transparent;
+outline-offset: 2px;height:100%;}
+atidan-prompt .promptbutton {padding: 0.5rem;--tw-bg-opacity: 1;
+background-color: rgba(253, 230, 138, var(--tw-bg-opacity));min-width:100px;--tw-text-opacity: 1;
+color: rgba(146, 64, 14, var(--tw-text-opacity));}
+atidan-prompt .promptbutton2 {padding: 0.5rem;min-width:50px;}
+    </style>
+</template>

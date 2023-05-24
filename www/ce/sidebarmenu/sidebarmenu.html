@@ -1,0 +1,84 @@
+<template for="sidebarmenu" theme="default">
+  
+  <div id="sidebar">
+    <img id="sidebarlogo">
+    <header>
+        <a href="#" id="appheader">My App</a>
+      </header>
+      <ul class="nav">
+      </ul>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+
+/* Sidebar Styles */
+
+#sidebar {
+  box-shadow: 0px -1px 12px 0px rgba(0,0,0,0.75);
+
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  padding: 0 20px;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+
+#sidebar .nav div{
+  display: block;
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+  cursor:pointer;
+}
+
+#sidebar .nav div:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav div i{
+  margin-right: 16px;
+}
+
+#sidebarlogo{
+    width: 40%;
+    padding: 10% 30%;
+    background:#fff
+}
+    </style>
+</template>
